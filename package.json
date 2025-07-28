@@ -1,0 +1,36 @@
+{
+  "name": "club-manager",
+  "version": "1.0.0",
+  "description": "Professional subscription management system for clubs and fitness centers",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "build:css": "tailwindcss -i ./resources/css/app.css -o ./public/assets/css/app.css --watch",
+    "build:css-prod": "tailwindcss -i ./resources/css/app.css -o ./public/assets/css/app.css --minify"
+  },
+  "keywords": [
+    "subscription",
+    "management",
+    "club",
+    "fitness"
+  ],
+  "author": "W3 Systems",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.31",
+    "postcss-loader": "^7.3.3",
+    "tailwindcss": "^3.3.5",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.1",
+    "axios": "^1.5.1"
+  }
+}

@@ -1,0 +1,236 @@
+[28-Jul-2025 18:00:52 Europe/London] Application Error: ini_set(): Session ini settings cannot be changed when a session is active
+[28-Jul-2025 18:00:52 Europe/London] Uncaught exception: ini_set(): Session ini settings cannot be changed when a session is active
+[28-Jul-2025 18:01:23 Europe/London] Application Error: ini_set(): Session ini settings cannot be changed when a session is active
+[28-Jul-2025 18:01:23 Europe/London] Uncaught exception: ini_set(): Session ini settings cannot be changed when a session is active
+[28-Jul-2025 17:03:56 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/perruftn/sites/club/public_html/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/perruftn/sites/club/public_html/index.php on line 13
+[28-Jul-2025 18:27:00 Europe/London] Router Error: Array to string conversion
+[28-Jul-2025 18:27:00 Europe/London] Application Error: Array to string conversion
+[28-Jul-2025 18:27:00 Europe/London] Uncaught exception: Array to string conversion
+[28-Jul-2025 18:28:18 Europe/London] Router Error: session_regenerate_id(): Session ID cannot be regenerated after headers have already been sent
+[28-Jul-2025 18:28:18 Europe/London] Application Error: session_regenerate_id(): Session ID cannot be regenerated after headers have already been sent
+[28-Jul-2025 18:28:18 Europe/London] Uncaught exception: session_regenerate_id(): Session ID cannot be regenerated after headers have already been sent
+[28-Jul-2025 18:29:27 Europe/London] Router Error: session_regenerate_id(): Session ID cannot be regenerated after headers have already been sent
+[28-Jul-2025 18:29:27 Europe/London] Application Error: session_regenerate_id(): Session ID cannot be regenerated after headers have already been sent
+[28-Jul-2025 18:29:27 Europe/London] Uncaught exception: session_regenerate_id(): Session ID cannot be regenerated after headers have already been sent
+[28-Jul-2025 18:33:59 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getAlertClasses()
+[28-Jul-2025 18:34:23 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getAlertClasses()
+[28-Jul-2025 18:37:10 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getAlertClasses()
+[28-Jul-2025 18:40:29 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getAlertClasses()
+[28-Jul-2025 18:40:51 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getAlertClasses()
+[28-Jul-2025 18:40:51 Europe/London] PHP Warning:  Undefined array key "APP_ENV" in /home/perruftn/sites/club/app/bootstrap.php on line 47
+[28-Jul-2025 18:40:51 Europe/London] PHP Fatal error:  Uncaught ErrorException: Undefined array key "APP_ENV" in /home/perruftn/sites/club/app/bootstrap.php:59
+Stack trace:
+#0 /home/perruftn/sites/club/app/bootstrap.php(59): {closure}()
+#1 [internal function]: {closure}()
+#2 {main}
+  thrown in /home/perruftn/sites/club/app/bootstrap.php on line 59
+[28-Jul-2025 18:45:01 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getAlertClasses()
+[28-Jul-2025 18:49:35 Europe/London] Router Error: Controller 'App\Controllers\Member\ClassController' not found
+[28-Jul-2025 18:49:35 Europe/London] Application Error: Controller 'App\Controllers\Member\ClassController' not found
+[28-Jul-2025 18:49:35 Europe/London] Uncaught exception: Controller 'App\Controllers\Member\ClassController' not found
+[28-Jul-2025 21:49:16 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/perruftn/sites/club/public_html/debug-auth.php on line 51
+[28-Jul-2025 21:51:57 UTC] Loading user - type: NULL
+[28-Jul-2025 22:52:47 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:52:47 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:52:47 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:52:51 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:52:51 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:52:51 Europe/London] Loading user - type: NULL
+[28-Jul-2025 21:52:58 UTC] Loading user - type: NULL
+[28-Jul-2025 22:53:05 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:53:05 Europe/London] === LOGIN DEBUG START ===
+[28-Jul-2025 22:53:05 Europe/London] Login attempt for email: mit@w3systems.net
+[28-Jul-2025 22:53:05 Europe/London] Admin found - ID: , Name: Mitul
+[28-Jul-2025 22:53:05 Europe/London] Password valid: NO
+[28-Jul-2025 22:53:05 Europe/London] Invalid password for admin: 
+[28-Jul-2025 22:53:05 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:53:10 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:53:10 Europe/London] === LOGIN DEBUG START ===
+[28-Jul-2025 22:53:10 Europe/London] Login attempt for email: mit@w3systems.net
+[28-Jul-2025 22:53:10 Europe/London] Admin found - ID: , Name: Mitul
+[28-Jul-2025 22:53:10 Europe/London] Password valid: YES
+[28-Jul-2025 22:53:10 Europe/London] About to login admin...
+[28-Jul-2025 22:53:10 Europe/London] Session data set:
+[28-Jul-2025 22:53:10 Europe/London] Session ID: 041msdogdlk5i245sgoogke8c1
+[28-Jul-2025 22:53:10 Europe/London] Admin ID in session: 
+[28-Jul-2025 22:53:10 Europe/London] User type in session: admin
+[28-Jul-2025 22:53:10 Europe/London] All session data: Array
+(
+    [_csrf_token] => 1199747926b6bd2ce61369bdebbc6cdd37f1d287a1dbce381366dd1d6c160398
+    [_flash] => Array
+        (
+        )
+
+    [test_data] => Session working!
+    [timestamp] => 2025-07-28 21:52:26
+    [admin_id] => 
+    [user_type] => admin
+)
+
+[28-Jul-2025 22:53:10 Europe/London] Loading user - type: admin
+[28-Jul-2025 22:53:10 Europe/London] Looking for admin ID: NULL
+[28-Jul-2025 22:53:10 Europe/London] Clearing invalid session
+[28-Jul-2025 22:53:10 Europe/London] Auth check after login: FALSE
+[28-Jul-2025 22:53:10 Europe/London] Auth is admin: FALSE
+[28-Jul-2025 22:53:10 Europe/London] Auth user is NULL
+[28-Jul-2025 22:53:10 Europe/London] About to redirect to /admin
+[28-Jul-2025 22:53:10 Europe/London] === LOGIN DEBUG END ===
+[28-Jul-2025 22:53:10 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:53:10 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:53:10 Europe/London] Loading user - type: NULL
+[28-Jul-2025 21:53:22 UTC] Loading user - type: NULL
+[28-Jul-2025 22:58:45 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:58:45 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:58:45 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:58:45 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:58:45 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:58:45 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:00:22 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:00:22 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:00:22 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:01:42 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:01:42 Europe/London] LOGIN SUCCESS - Session contents: Array
+(
+    [_csrf_token] => e4e60850da46f0f7a5a874247b12286d1c032448d77ae6309fcc3fbcb0423070
+    [_flash] => Array
+        (
+        )
+
+    [admin_id] => 
+    [user_type] => admin
+)
+
+[28-Jul-2025 23:01:42 Europe/London] Loading user - type: admin
+[28-Jul-2025 23:01:42 Europe/London] Looking for admin ID: NULL
+[28-Jul-2025 23:01:42 Europe/London] Clearing invalid session
+[28-Jul-2025 23:01:42 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:01:42 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:10:38 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:10:38 Europe/London] === LOGIN ADMIN DEBUG ===
+[28-Jul-2025 23:10:38 Europe/London] Admin object: Array
+(
+    [first_name] => Mitul
+    [last_name] => Shah
+    [email] => mit@w3systems.net
+    [mobile] => 0123
+)
+
+[28-Jul-2025 23:10:38 Europe/London] Admin ID: 
+[28-Jul-2025 23:10:38 Europe/London] Admin ID type: NULL
+[28-Jul-2025 23:10:38 Europe/London] Setting admin_id in session: 0
+[28-Jul-2025 23:10:38 Europe/London] Session verification:
+[28-Jul-2025 23:10:38 Europe/London] admin_id in session: 0
+[28-Jul-2025 23:10:38 Europe/London] user_type in session: 'admin'
+[28-Jul-2025 23:10:38 Europe/London] Raw _SESSION: Array
+(
+    [_csrf_token] => 86e02629b9e8754769f72a3110383e99003b30ff4866d75c950ee63ee72920de
+    [_flash] => Array
+        (
+        )
+
+    [admin_id] => 0
+    [user_type] => admin
+)
+
+[28-Jul-2025 23:10:38 Europe/London] === LOGIN ADMIN DEBUG END ===
+[28-Jul-2025 23:10:38 Europe/London] LOGIN SUCCESS - Session contents: Array
+(
+    [_csrf_token] => 86e02629b9e8754769f72a3110383e99003b30ff4866d75c950ee63ee72920de
+    [_flash] => Array
+        (
+        )
+
+    [admin_id] => 0
+    [user_type] => admin
+)
+
+[28-Jul-2025 23:10:38 Europe/London] Loading user - type: 'admin'
+[28-Jul-2025 23:10:38 Europe/London] Looking for admin ID: 0
+[28-Jul-2025 23:10:38 Europe/London] Admin ID type: integer
+[28-Jul-2025 23:10:38 Europe/London] Invalid admin_id in session: 0
+[28-Jul-2025 23:10:38 Europe/London] Clearing invalid session
+[28-Jul-2025 23:10:38 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:10:38 Europe/London] Loading user - type: NULL
+[28-Jul-2025 22:21:49 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/perruftn/sites/club/public_html/admin-test.php on line 4
+[28-Jul-2025 23:25:58 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:25:58 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:25:58 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:25:58 Europe/London] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/perruftn/sites/club/app/Core/Model.php on line 5
+[28-Jul-2025 23:25:59 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:25:59 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:25:59 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:25:59 Europe/London] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/perruftn/sites/club/app/Core/Model.php on line 5
+[28-Jul-2025 23:26:05 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:26:05 Europe/London] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/perruftn/sites/club/app/Core/Model.php on line 5
+[28-Jul-2025 23:27:26 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:27:26 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:27:26 Europe/London] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/perruftn/sites/club/app/Core/Model.php on line 5
+[28-Jul-2025 23:27:33 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:27:33 Europe/London] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/perruftn/sites/club/app/Core/Model.php on line 5
+[28-Jul-2025 23:28:40 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:28:40 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:28:40 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:28:47 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:28:47 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:28:47 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:28:49 Europe/London] Loading user - type: NULL
+[28-Jul-2025 23:28:49 Europe/London] === DEEP ADMIN LOGIN DEBUG ===
+[28-Jul-2025 23:28:49 Europe/London] Admin object class: App\Models\Admin
+[28-Jul-2025 23:28:49 Europe/London] Admin object dump: App\Models\Admin::__set_state(array(
+   'attributes' => 
+  array (
+    'id' => 1,
+    'first_name' => 'Mitul',
+    'last_name' => 'Shah',
+    'email' => 'mit@w3systems.net',
+    'password_hash' => '$2y$10$4ctbPBpnBVkuVfyVBjXhxucz1xKW6qZHpXLwr6k1JugJrprVHDIKq',
+    'mobile' => '0123',
+    'created_at' => '2025-07-25 13:04:46',
+    'updated_at' => '2025-07-26 10:36:19',
+  ),
+   'original' => 
+  array (
+    'id' => 1,
+    'first_name' => 'Mitul',
+    'last_name' => 'Shah',
+    'email' => 'mit@w3systems.net',
+    'password_hash' => '$2y$10$4ctbPBpnBVkuVfyVBjXhxucz1xKW6qZHpXLwr6k1JugJrprVHDIKq',
+    'mobile' => '0123',
+    'created_at' => '2025-07-25 13:04:46',
+    'updated_at' => '2025-07-26 10:36:19',
+  ),
+   'exists' => true,
+))
+[28-Jul-2025 23:28:49 Europe/London] admin->id: 1 (type: integer)
+[28-Jul-2025 23:28:49 Europe/London] admin->getAttribute('id'): 1
+[28-Jul-2025 23:28:49 Europe/London] Admin attributes: 
+[28-Jul-2025 23:28:49 Europe/London] Magic getter id: 1 (type: integer)
+[28-Jul-2025 23:28:49 Europe/London] Uncaught exception: Class "App\Core\ReflectionClass" not found
+[28-Jul-2025 23:30:39 Europe/London] Admin login successful - ID: 1
+[28-Jul-2025 23:30:39 Europe/London] LOGIN SUCCESS - Session contents: Array
+(
+    [_csrf_token] => 2e3e8040ad18cc59dff2b37ad2d053def2c151a39998b0e82d51d27d348c36fc
+    [_flash] => Array
+        (
+        )
+
+    [admin_id] => 1
+    [user_type] => admin
+)
+
+[28-Jul-2025 23:30:39 Europe/London] Uncaught exception: Call to undefined method App\Models\Member::where()
+[28-Jul-2025 23:36:23 Europe/London] Admin login successful - ID: 1
+[28-Jul-2025 23:36:23 Europe/London] LOGIN SUCCESS - Session contents: Array
+(
+    [_csrf_token] => 5bb08283a280508a56ce6b4c6f61cc9d77e0dac794a5f3d0dfc404cce8c05193
+    [_flash] => Array
+        (
+        )
+
+    [admin_id] => 1
+    [user_type] => admin
+)
+

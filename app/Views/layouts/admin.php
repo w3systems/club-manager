@@ -1,4 +1,8 @@
-<!-- app/Views/layouts/admin.php - MODIFIED HEAD SECTION -->
+<?php
+// app/Views/layouts/member.php - UPDATED FOR CDN
+?>
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-50">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,63 +32,104 @@
     <!-- Alpine.js CDN -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
-    <!-- Custom Styles -->
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="<?= App\Models\Setting::get('site_color_primary', '#971b1e') ?>">
+    <link rel="manifest" href="<?= $this->url('manifest.json') ?>">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="<?= $this->e($_ENV['APP_NAME'] ?? 'Club Manager') ?>">
+    
     <style>
         :root {
             --primary-color: <?= App\Models\Setting::get('site_color_primary', '#971b1e') ?>;
             --secondary-color: <?= App\Models\Setting::get('site_color_secondary', '#cda22d') ?>;
         }
         
-        /* Custom button styles */
-        .btn {
-            @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors;
-        }
         .btn-primary {
-            @apply text-white focus:ring-red-500;
             background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: all 0.2s;
         }
         .btn-primary:hover {
             filter: brightness(0.9);
         }
         
-        /* Form styles */
-        .form-input {
-            @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 sm:text-sm;
-        }
-        .form-input-error {
-            @apply border-red-300 text-red-900 placeholder-red-300 focus:border-red-500 focus:ring-red-500;
-        }
-        
-        /* Badge styles */
-        .badge {
-            @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
-        }
-        .badge-success { @apply bg-green-100 text-green-800; }
-        .badge-error { @apply bg-red-100 text-red-800; }
-        .badge-warning { @apply bg-yellow-100 text-yellow-800; }
-        .badge-info { @apply bg-blue-100 text-blue-800; }
-        
-        /* Loading spinner */
-        .spinner {
-            display: inline-block;
-            width: 1rem;
-            height: 1rem;
-            border: 2px solid currentColor;
-            border-right-color: transparent;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        /* Sidebar active states */
-        .nav-link-active {
-            @apply bg-red-100 text-red-900 border-r-2 border-red-500;
-        }
-        .nav-link-inactive {
-            @apply text-gray-600 hover:bg-gray-50 hover:text-gray-900;
-        }
+        .text-primary { color: var(--primary-color); }
+        .bg-primary { background-color: var(--primary-color); }
+        .border-primary { border-color: var(--primary-color); }
     </style>
+
+	<!-- Admin CSS -->
+	<link rel="stylesheet" href="/assets/css/admin.css">
+
 </head>
+<body class="h-full">
+    <!-- Rest of the body content remains the same -->
+    <div x-data="{ sidebarOpen: false, sidebarCollapsed: false }" class="flex h-full">
+        <!-- Sidebar content unchanged -->
+        <div class="relative">
+            <div x-show="sidebarOpen" @click="sidebarOpen = false" 
+                 x-transition.opacity class="fixed inset-0 z-40 bg-gray-600 bg-opacity-75 lg:hidden"></div>
+            
+            <div :class="sidebarCollapsed ? 'w-16' : 'w-64'" 
+                 class="fixed inset-y-0 left-0 z-50 flex flex-col transition-all duration-300 bg-white border-r border-gray-200 lg:relative lg:translate-x-0"
+                 :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'">
+                
+                <div class="flex items-center justify-between h-16 px-4 border-b border-gray-200">
+                    <div x-show="!sidebarCollapsed" class="flex items-center">
+                        <h1 class="text-xl font-bold text-primary">
+                            <?= $this->e($_ENV['APP_NAME'] ?? 'Club Manager') ?>
+                        </h1>
+                    </div>
+                    <button @click="sidebarCollapsed = !sidebarCollapsed" 
+                            class="p-1 text-gray-500 hover:text-gray-700 hidden lg:block">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                
+                <nav class="flex-1 px-2 py-4 space-y-1 overflow-y-auto">
+                    <?php $this->component('sidebar.admin-nav', ['collapsed' => false]) ?>
+                </nav>
+                
+                <div class="flex-shrink-0 p-4 border-t border-gray-200">
+                    <?php $this->component('sidebar.admin-user-menu', ['collapsed' => false]) ?>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex flex-col flex-1 min-w-0">
+            <div class="flex items-center justify-between h-16 px-4 bg-white border-b border-gray-200 lg:px-6">
+                <button @click="sidebarOpen = !sidebarOpen" class="p-1 text-gray-500 hover:text-gray-700 lg:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="flex items-center space-x-4">
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open" class="p-2 text-gray-500 hover:text-gray-700 relative">
+                            <i class="fas fa-bell"></i>
+                            <?php if (isset($unreadNotifications) && count($unreadNotifications) > 0): ?>
+                                <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                                    <?= count($unreadNotifications) ?>
+                                </span>
+                            <?php endif; ?>
+                        </button>
+                    </div>
+                    
+                    <span class="text-sm text-gray-500">Hi, <?= $this->e($auth->user()->first_name) ?>!</span>
+                </div>
+            </div>
+            
+            <main class="flex-1 p-4 lg:p-6 overflow-auto">
+                <?php $this->component('alerts') ?>
+                <?= $content ?>
+            </main>
+        </div>
+    </div>
+    
+    <!-- Include the simple JavaScript -->
+    <script src="<?= $this->url('assets/js/app.js') ?>"></script>
+</body>
+</html>

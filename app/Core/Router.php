@@ -113,6 +113,7 @@ class Router
      */
     private function handleRoute(array $route): void
     {
+
         try {
             // Extract parameters from URL
             $pattern = '#^' . str_replace('/', '\/', $route['pattern']) . '$#';
@@ -133,7 +134,7 @@ class Router
             $this->handleError($e);
         }
     }
-    
+
     /**
      * Run middleware
      */
@@ -159,7 +160,7 @@ class Router
     private function callController(string $handler, array $params): void
     {
         [$controllerName, $method] = explode('@', $handler);
-        
+
         // Determine namespace based on controller location
         if (strpos($controllerName, 'Admin\\') === 0) {
             $controllerClass = 'App\\Controllers\\' . $controllerName;

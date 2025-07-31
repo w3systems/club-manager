@@ -73,7 +73,6 @@ class Validator
     private function applyRule(string $field, $value, string $rule): void
     {
         [$ruleName, $parameter] = $this->parseRule($rule);
-        
         switch ($ruleName) {
             case 'required':
                 if ($this->isEmpty($value)) {
@@ -130,12 +129,28 @@ class Validator
                 }
                 break;
                 
-            case 'unique':
+            /*case 'unique':
                 if (!empty($value) && !$this->isUnique($parameter, $field, $value)) {
                     $this->addError($field, 'unique');
                 }
-                break;
-                
+                break;*/
+ 
+
+			case 'unique':
+				if (!empty($value)) {
+					// Parse table and optional exclude ID
+					$parts = explode(',', $parameter);
+					$table = $parts[0];
+					$excludeId = isset($parts[1]) ? $parts[1] : null;
+					
+					if (!$this->isUnique($table, $field, $value, $excludeId)) {
+						$this->addError($field, 'unique');
+					}
+				}
+				break;
+
+
+ 
             case 'exists':
                 if (!empty($value) && !$this->exists($parameter, $field, $value)) {
                     $this->addError($field, 'exists');
@@ -228,11 +243,18 @@ class Validator
         
         $fieldName = ucfirst(str_replace('_', ' ', $field));
         
+		$minValue = $parameters['min'] ?? 'the required number of';
+		$maxValue = $parameters['max'] ?? 'the required number of';
+		$dateFormat = $parameters['format'] ?? 'dd/mm/yyyy';
+		$inValue = $parameters['values'] ?? ' the specified values';
+		
         $messages = [
             'required' => "{$fieldName} is required.",
             'email' => "{$fieldName} must be a valid email address.",
-            'min' => "{$fieldName} must be at least {$parameters['min']} characters.",
-            'max' => "{$fieldName} may not be greater than {$parameters['max']} characters.",
+            //'min' => "{$fieldName} must be at least {$parameters['min']} characters.",
+			'min' => "{$fieldName} must be at least {$minValue} characters.",
+            //'max' => "{$fieldName} may not be greater than {$parameters['max']} characters.",
+            'max' => "{$fieldName} may not be greater than {$maxValue} characters.",
             'numeric' => "{$fieldName} must be a number.",
             'integer' => "{$fieldName} must be an integer.",
             'alpha' => "{$fieldName} may only contain letters.",
@@ -241,8 +263,8 @@ class Validator
             'unique' => "{$fieldName} has already been taken.",
             'exists' => "Selected {$fieldName} is invalid.",
             'date' => "{$fieldName} is not a valid date.",
-            'date_format' => "{$fieldName} does not match the format {$parameters['format']}.",
-            'in' => "{$fieldName} must be one of: {$parameters['values']}.",
+            'date_format' => "{$fieldName} does not match the format {$dateFormat}.",
+            'in' => "{$fieldName} must be one of: {$inValue}.",
             'phone' => "{$fieldName} must be a valid phone number.",
         ];
         
@@ -252,14 +274,40 @@ class Validator
     /**
      * Check if value is unique in database
      */
-    private function isUnique(string $table, string $field, $value): bool
+    private function isUniqueold(string $table, string $field, $value, $excludeId = null): bool
     {
         $db = \App\Config\Database::getConnection();
         $stmt = $db->prepare("SELECT COUNT(*) FROM {$table} WHERE {$field} = ?");
-        $stmt->execute([$value]);
+		$params = [$value];
+		
+		
+		if ($excludeId !== null) {
+			$query .= " AND id != ?";
+			$params[] = $excludeId;
+		}
+		echo (print_r($params));
+		$stmt = $this->db->prepare($query);
+		$stmt->execute($params);
         
         return $stmt->fetchColumn() == 0;
     }
+
+	private function isUnique(string $table, string $field, $value, $excludeId = null): bool
+	{
+		$db = \App\Config\Database::getConnection();
+		$query = "SELECT COUNT(*) FROM {$table} WHERE {$field} = ?";
+		$params = [$value];
+		
+		if ($excludeId !== null) {
+			$query .= " AND id != ?";
+			$params[] = $excludeId;
+		}
+		
+		$stmt = $db->prepare($query);
+		$stmt->execute($params);
+		return $stmt->fetchColumn() == 0;
+	}
+
     
     /**
      * Check if value exists in database

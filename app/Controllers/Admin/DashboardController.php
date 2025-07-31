@@ -275,7 +275,7 @@ class DashboardController extends Controller
     /**
      * Create member object from database row
      */
-    private function createMemberFromRow(array $row): object
+    private function createMemberFromRowold(array $row): object
     {
         return (object) [
             'id' => $row['id'],
@@ -291,11 +291,33 @@ class DashboardController extends Controller
             }
         ];
     }
+
+
+	/**
+	 * Create member object from database row - FIXED VERSION
+	 */
+	private function createMemberFromRow(array $row): object
+	{
+		$fullName = trim($row['first_name'] . ' ' . $row['last_name']);
+		$initials = strtoupper(substr($row['first_name'], 0, 1) . substr($row['last_name'], 0, 1));
+		
+		return (object) [
+			'id' => $row['id'],
+			'first_name' => $row['first_name'],
+			'last_name' => $row['last_name'],
+			'email' => $row['email'],
+			'created_at' => $row['created_at'],
+			'full_name' => $fullName,
+			'initials' => $initials,
+			'formatted_date' => date('M j, Y', strtotime($row['created_at']))
+		];
+	}
+
     
     /**
      * Create class object from database row
      */
-    private function createClassFromRow(array $row): object
+    private function createClassFromRowold(array $row): object
     {
         return (object) [
             'id' => $row['id'],
@@ -317,7 +339,7 @@ class DashboardController extends Controller
     /**
      * Create payment object from database row
      */
-    private function createPaymentFromRow(array $row): object
+    private function createPaymentFromRowold(array $row): object
     {
         return (object) [
             'id' => $row['id'],
@@ -350,7 +372,7 @@ class DashboardController extends Controller
     /**
      * Create message object from database row
      */
-    private function createMessageFromRow(array $row): object
+    private function createMessageFromRowold(array $row): object
     {
         return (object) [
             'id' => $row['id'],
@@ -365,7 +387,7 @@ class DashboardController extends Controller
     /**
      * Create subscription object from database row
      */
-    private function createSubscriptionFromRow(array $row): object
+    private function createSubscriptionFromRowold(array $row): object
     {
         return (object) [
             'id' => $row['id'],
@@ -376,4 +398,94 @@ class DashboardController extends Controller
             'email' => $row['email']
         ];
     }
+
+
+	/**
+	 * Create class object from database row - FIXED VERSION
+	 */
+	private function createClassFromRow(array $row): object
+	{
+		// Get current booking count
+		$db = $this->container->get('db');
+		$stmt = $db->prepare("SELECT COUNT(*) FROM class_bookings WHERE class_instance_id = ? AND status = 'booked'");
+		$stmt->execute([$row['id']]);
+		$currentBookings = (int) $stmt->fetchColumn();
+		
+		return (object) [
+			'id' => $row['id'],
+			'name' => $row['name'],
+			'instance_date_time' => new \DateTime($row['instance_date_time']),
+			'capacity' => $row['capacity'],
+			'current_booking_count' => $currentBookings,
+			'formatted_date_time' => date('d/m/Y H:i', strtotime($row['instance_date_time']))
+		];
+	}
+
+	/**
+	 * Create payment object from database row - FIXED VERSION
+	 */
+	private function createPaymentFromRow(array $row): object
+	{
+		$statusClasses = match($row['status']) {
+			'pending' => 'text-yellow-600 bg-yellow-100',
+			'succeeded' => 'text-green-600 bg-green-100',
+			'failed' => 'text-red-600 bg-red-100',
+			'refunded' => 'text-gray-600 bg-gray-100',
+			default => 'text-gray-600 bg-gray-100'
+		};
+		
+		return (object) [
+			'id' => $row['id'],
+			'amount' => $row['amount'],
+			'currency' => $row['currency'],
+			'status' => $row['status'],
+			'payment_date' => $row['payment_date'],
+			'description' => $row['description'] ?? null,
+			'first_name' => $row['first_name'] ?? '',
+			'last_name' => $row['last_name'] ?? '',
+			'email' => $row['email'] ?? '',
+			'formatted_amount' => number_format($row['amount'], 2),
+			'status_label' => ucfirst($row['status']),
+			'status_color_class' => $statusClasses,
+			'formatted_date' => date('M j, Y', strtotime($row['payment_date']))
+		];
+	}
+
+	/**
+	 * Create message object from database row - FIXED VERSION
+	 */
+	private function createMessageFromRow(array $row): object
+	{
+		return (object) [
+			'id' => $row['id'],
+			'content' => $row['content'],
+			'created_at' => $row['created_at'],
+			'first_name' => $row['first_name'],
+			'last_name' => $row['last_name'],
+			'email' => $row['email'],
+			'formatted_date' => date('M j, Y', strtotime($row['created_at'])),
+			'preview' => substr(strip_tags($row['content']), 0, 100) . '...'
+		];
+	}
+
+	/**
+	 * Create subscription object from database row - FIXED VERSION
+	 */
+	private function createSubscriptionFromRow(array $row): object
+	{
+		return (object) [
+			'id' => $row['id'],
+			'next_renewal_date' => $row['next_renewal_date'],
+			'subscription_name' => $row['subscription_name'],
+			'first_name' => $row['first_name'],
+			'last_name' => $row['last_name'],
+			'email' => $row['email'],
+			'member_full_name' => trim($row['first_name'] . ' ' . $row['last_name']),
+			'formatted_renewal_date' => date('M j, Y', strtotime($row['next_renewal_date'])),
+			'days_until_renewal' => ceil((strtotime($row['next_renewal_date']) - time()) / 86400)
+		];
+	}
+
+
+
 }

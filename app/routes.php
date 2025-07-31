@@ -111,7 +111,7 @@ $router->get('/admin/users/(\d+)/edit', 'Admin\\UserController@edit', ['middlewa
 $router->post('/admin/users/(\d+)', 'Admin\\UserController@update', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_users']);
 $router->delete('/admin/users/(\d+)', 'Admin\\UserController@delete', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_users']);
 
-// Admin Roles Management
+/*// Admin Roles Management
 $router->get('/admin/roles', 'Admin\\RoleController@index', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
 $router->get('/admin/roles/create', 'Admin\\RoleController@create', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
 $router->post('/admin/roles', 'Admin\\RoleController@store', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
@@ -123,6 +123,23 @@ $router->delete('/admin/roles/(\d+)', 'Admin\\RoleController@delete', ['middlewa
 // Admin Permissions Management
 $router->get('/admin/permissions', 'Admin\\PermissionController@index', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
 $router->post('/admin/permissions', 'Admin\\PermissionController@store', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
+*/
+
+// Main unified management page
+$router->get('/admin/roles', 'Admin\\RoleController@index', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
+
+// Role operations (simplified since we're doing inline editing)
+$router->post('/admin/roles/store', 'Admin\\RoleController@store', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
+$router->post('/admin/roles/(\d+)/update', 'Admin\\RoleController@update', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
+$router->post('/admin/roles/(\d+)/delete', 'Admin\\RoleController@delete', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
+
+// Permission operations (inline editing)
+$router->post('/admin/permissions/create', 'Admin\\RoleController@createPermission', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
+$router->post('/admin/permissions/(\d+)/update', 'Admin\\RoleController@updatePermission', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
+$router->post('/admin/permissions/(\d+)/delete', 'Admin\\RoleController@deletePermission', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
+
+// Bulk permission assignment
+$router->post('/admin/roles/update-permissions', 'Admin\\RoleController@updatePermissions', ['middleware' => ['auth', 'admin'], 'permission' => 'manage_roles']);
 
 // Admin Messages
 $router->get('/admin/messages', 'Admin\\MessageController@index', ['middleware' => ['auth', 'admin'], 'permission' => 'view_member_messages']);

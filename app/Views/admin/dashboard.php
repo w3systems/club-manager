@@ -131,13 +131,13 @@
                                 <div class="flex-shrink-0 h-8 w-8">
                                     <div class="h-8 w-8 rounded-full bg-gray-200 flex items-center justify-center">
                                         <span class="text-sm font-medium text-gray-700">
-                                            <?= $member->getInitials() ?>
+                                            <?= $member->initials ?>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="ml-4">
                                     <p class="text-sm font-medium text-gray-900">
-                                        <?= $this->e($member->getFullName()) ?>
+                                        <?= $this->e($member->full_name) ?>
                                     </p>
                                     <p class="text-sm text-gray-500">
                                         <?= $this->e($member->email) ?>
@@ -177,12 +177,12 @@
                                         <?= $this->e($class->name) ?>
                                     </p>
                                     <p class="text-sm text-gray-500">
-                                        <?= $class->getFormattedDateTime() ?>
+                                        <?= $class->formatted_date_time ?>
                                     </p>
                                 </div>
                                 <div class="text-right">
                                     <p class="text-sm text-gray-900">
-                                        <?= $class->getCurrentBookingCount() ?>/<?= $class->capacity ?: '∞' ?> booked
+                                        <?= $class->current_booking_count ?>/<?= $class->capacity ?: '∞' ?> booked
                                     </p>
                                 </div>
                             </div>

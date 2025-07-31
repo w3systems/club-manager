@@ -1,0 +1,436 @@
+/* 
+ * Admin Forms Stylesheet
+ * Consistent styling for all admin forms
+ * Path: /public_html/assets/css/admin-forms.css
+ */
+
+/* ==========================================================================
+   Form Inputs & Controls
+   ========================================================================== */
+
+.form-input,
+.form-select,
+.form-textarea {
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #d1d5db;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #111827;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-input:hover,
+.form-select:hover,
+.form-textarea:hover {
+    border-color: #9ca3af;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-input:disabled,
+.form-select:disabled,
+.form-textarea:disabled {
+    background-color: #f9fafb;
+    border-color: #e5e7eb;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+/* Error states */
+.form-input-error,
+.form-select-error,
+.form-textarea-error {
+    border-color: #f87171 !important;
+    background-color: #fef2f2;
+    color: #dc2626;
+}
+
+.form-input-error:focus,
+.form-select-error:focus,
+.form-textarea-error:focus {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+/* ==========================================================================
+   Form Labels & Help Text
+   ========================================================================== */
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.form-label-required::after {
+    content: " *";
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.form-help {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.form-error {
+    font-size: 12px;
+    color: #dc2626;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.form-error::before {
+    content: "⚠";
+    margin-right: 4px;
+}
+
+/* ==========================================================================
+   Form Sections & Layout
+   ========================================================================== */
+
+.form-section {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.form-section-header {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-section-description {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.form-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.form-grid-cols-1 { grid-template-columns: 1fr; }
+.form-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.form-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+.form-col-span-2 { grid-column: span 2; }
+.form-col-span-3 { grid-column: span 3; }
+
+/* Responsive grid */
+@media (max-width: 640px) {
+    .form-grid-cols-2,
+    .form-grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-col-span-2,
+    .form-col-span-3 {
+        grid-column: span 1;
+    }
+}
+
+/* ==========================================================================
+   Checkboxes & Radio Buttons
+   ========================================================================== */
+
+.form-checkbox,
+.form-radio {
+    height: 18px;
+    width: 18px;
+    color: #ef4444;
+    border: 2px solid #d1d5db;
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: all 0.15s ease-in-out;
+}
+
+.form-radio {
+    border-radius: 50%;
+}
+
+.form-checkbox:focus,
+.form-radio:focus {
+    outline: none;
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-checkbox:checked,
+.form-radio:checked {
+    background-color: #ef4444;
+    border-color: #ef4444;
+}
+
+/* ==========================================================================
+   Consent Boxes & Special Sections
+   ========================================================================== */
+
+.consent-box {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.consent-box:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.consent-box.required {
+    border-left: 4px solid #ef4444;
+}
+
+.consent-box.optional {
+    border-left: 4px solid #6b7280;
+}
+
+.consent-label {
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.consent-description {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    min-width: 120px;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background-color: #ef4444;
+    color: #ffffff;
+    border-color: #ef4444;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #dc2626;
+    border-color: #dc2626;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3);
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #374151;
+    border-color: #d1d5db;
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+}
+
+.btn-danger {
+    background-color: #dc2626;
+    color: #ffffff;
+    border-color: #dc2626;
+}
+
+.btn-danger:hover:not(:disabled) {
+    background-color: #b91c1c;
+    border-color: #b91c1c;
+}
+
+.btn-success {
+    background-color: #059669;
+    color: #ffffff;
+    border-color: #059669;
+}
+
+.btn-success:hover:not(:disabled) {
+    background-color: #047857;
+    border-color: #047857;
+}
+
+/* ==========================================================================
+   Form Actions & Buttons
+   ========================================================================== */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 24px;
+    border-top: 2px solid #f3f4f6;
+    margin-top: 32px;
+}
+
+@media (max-width: 640px) {
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Status Badges & Indicators
+   ========================================================================== */
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge-success {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.status-badge-warning {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status-badge-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.status-badge-info {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+/* ==========================================================================
+   File Upload Areas
+   ========================================================================== */
+
+.file-upload-area {
+    border: 2px dashed #d1d5db;
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    background-color: #f9fafb;
+    transition: all 0.2s ease-in-out;
+}
+
+.file-upload-area:hover {
+    border-color: #9ca3af;
+    background-color: #f3f4f6;
+}
+
+.file-upload-area.dragover {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+/* ==========================================================================
+   Loading States
+   ========================================================================== */
+
+.form-loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.form-loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #f3f4f6;
+    border-top: 3px solid #ef4444;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Responsive Adjustments
+   ========================================================================== */
+
+@media (max-width: 640px) {
+    .form-section {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .form-input,
+    .form-select,
+    .form-textarea {
+        padding: 10px 12px;
+    }
+    
+    .consent-box {
+        padding: 12px;
+    }
+}

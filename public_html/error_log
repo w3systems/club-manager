@@ -234,3 +234,818 @@ Stack trace:
     [user_type] => admin
 )
 
+[29-Jul-2025 00:09:21 Europe/London] /home/perruftn/sites/club/app/Views/admin/dashboard.php
+[29-Jul-2025 00:10:19 Europe/London] <div class="space-y-6">
+    <!-- Page header -->
+    <div>
+        <h1 class="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
+        <p class="text-gray-600">Welcome back, Mitul Shah!</p>
+    </div>
+
+    <!-- Stats overview -->
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Total Members -->
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="p-5">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-users text-2xl text-blue-500"></i>
+                    </div>
+                    <div class="ml-5 w-0 flex-1">
+                        <dl>
+                            <dt class="text-sm font-medium text-gray-500 truncate">Total Members</dt>
+                            <dd class="text-3xl font-semibold text-gray-900">0</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Subscriptions -->
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="p-5">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-credit-card text-2xl text-green-500"></i>
+                    </div>
+                    <div class="ml-5 w-0 flex-1">
+                        <dl>
+                            <dt class="text-sm font-medium text-gray-500 truncate">Active Subscriptions</dt>
+                            <dd class="text-3xl font-semibold text-gray-900">0</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Today's Revenue -->
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="p-5">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-pound-sign text-2xl text-yellow-500"></i>
+                    </div>
+                    <div class="ml-5 w-0 flex-1">
+                        <dl>
+                            <dt class="text-sm font-medium text-gray-500 truncate">Today's Revenue</dt>
+                            <dd class="text-3xl font-semibold text-gray-900">£0.00</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- This Month's Revenue -->
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="p-5">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-chart-line text-2xl text-purple-500"></i>
+                    </div>
+                    <div class="ml-5 w-0 flex-1">
+                        <dl>
+                            <dt class="text-sm font-medium text-gray-500 truncate">Monthly Revenue</dt>
+                            <dd class="text-3xl font-semibold text-gray-900">£0.00</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Today's Classes -->
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="p-5">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-calendar-alt text-2xl text-indigo-500"></i>
+                    </div>
+                    <div class="ml-5 w-0 flex-1">
+                        <dl>
+                            <dt class="text-sm font-medium text-gray-500 truncate">Today's Classes</dt>
+                            <dd class="text-3xl font-semibold text-gray-900">0</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Failed Payments -->
+        <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="p-5">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-exclamation-triangle text-2xl text-red-500"></i>
+                    </div>
+                    <div class="ml-5 w-0 flex-1">
+                        <dl>
+                            <dt class="text-sm font-medium text-gray-500 truncate">Failed Payments</dt>
+                            <dd class="text-3xl font-semibold text-gray-900">0</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <!-- Recent Members -->
+        <div class="bg-white shadow rounded-lg">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h3 class="text-lg font-medium text-gray-900">Recent Members</h3>
+            </div>
+            <div class="divide-y divide-gray-200">
+                                    <div class="px-6 py-4 text-center text-gray-500">
+                        No recent members found.
+                    </div>
+                            </div>
+            <div class="px-6 py-3 bg-gray-50 text-right">
+                <a href="https://ttbilling.w3systemsdev.co.uk/admin/members" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                    View all members →
+                </a>
+            </div>
+        </div>
+
+        <!-- Upcoming Classes -->
+        <div class="bg-white shadow rounded-lg">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <h3 class="text-lg font-medium text-gray-900">Upcoming Classes</h3>
+            </div>
+            <div class="divide-y divide-gray-200">
+                                    <div class="px-6 py-4 text-center text-gray-500">
+                        No upcoming classes found.
+                    </div>
+                            </div>
+            <div class="px-6 py-3 bg-gray-50 text-right">
+                <a href="https://ttbilling.w3systemsdev.co.uk/admin/classes" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                    View all classes →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Failed Payments & Messages -->
+    </div>
+[29-Jul-2025 00:11:11 Europe/London] admin
+[29-Jul-2025 00:11:22 Europe/London] Uncaught exception: error_log(): Argument #1 ($message) must be of type string, array given
+[29-Jul-2025 00:11:42 Europe/London] Array
+(
+    [stats] => Array
+        (
+            [total_members] => 0
+            [active_subscriptions] => 0
+            [today_revenue] => 0
+            [month_revenue] => 0
+            [today_classes] => 0
+            [failed_payments] => 0
+        )
+
+    [recentMembers] => Array
+        (
+        )
+
+    [upcomingClasses] => Array
+        (
+        )
+
+    [recentPayments] => Array
+        (
+        )
+
+    [failedPayments] => Array
+        (
+        )
+
+    [unreadMessages] => Array
+        (
+        )
+
+    [expiringSubscriptions] => Array
+        (
+        )
+
+    [auth] => App\Core\Auth Object
+        (
+            [session:App\Core\Auth:private] => App\Core\Session Object
+                (
+                )
+
+            [user:App\Core\Auth:private] => App\Models\Admin Object
+                (
+                    [attributes:protected] => Array
+                        (
+                            [id] => 1
+                            [first_name] => Mitul
+                            [last_name] => Shah
+                            [email] => mit@w3systems.net
+                            [password_hash] => $2y$10$4ctbPBpnBVkuVfyVBjXhxucz1xKW6qZHpXLwr6k1JugJrprVHDIKq
+                            [mobile] => 0123
+                            [created_at] => 2025-07-25 13:04:46
+                            [updated_at] => 2025-07-28 22:40:41
+                        )
+
+                    [original:protected] => Array
+                        (
+                            [id] => 1
+                            [first_name] => Mitul
+                            [last_name] => Shah
+                            [email] => mit@w3systems.net
+                            [password_hash] => $2y$10$4ctbPBpnBVkuVfyVBjXhxucz1xKW6qZHpXLwr6k1JugJrprVHDIKq
+                            [mobile] => 0123
+                            [created_at] => 2025-07-25 13:04:46
+                            [updated_at] => 2025-07-28 22:40:41
+                        )
+
+                    [exists:protected] => 1
+                )
+
+            [userType:App\Core\Auth:private] => admin
+        )
+
+    [session] => App\Core\Session Object
+        (
+        )
+
+    [currentUrl] => /admin
+    [csrfToken] => 1c65ea9b2f2003626fab9a1ef63b3ccd1171a770d7d521f49c05ac70272caf30
+    [flashMessages] => Array
+        (
+        )
+
+)
+
+[29-Jul-2025 00:13:07 Europe/London] /home/perruftn/sites/club/app/Views/layouts/admin.php
+[29-Jul-2025 00:39:15 Europe/London] Application Error: Array to string conversion
+[29-Jul-2025 00:39:15 Europe/London] Uncaught exception: Array to string conversion
+[29-Jul-2025 00:45:25 Europe/London] render: auth/admin-login
+[29-Jul-2025 00:45:32 Europe/London] render: admin/dashboard
+[29-Jul-2025 00:50:52 Europe/London] Router Error: Undefined variable $view
+[29-Jul-2025 00:50:52 Europe/London] Application Error: Undefined variable $view
+[29-Jul-2025 00:50:52 Europe/London] Uncaught exception: Undefined variable $view
+[29-Jul-2025 00:51:32 Europe/London] Router Error: Undefined variable $auth
+[29-Jul-2025 00:51:32 Europe/London] Application Error: Undefined variable $auth
+[29-Jul-2025 00:51:32 Europe/London] Uncaught exception: Undefined variable $auth
+[29-Jul-2025 00:52:18 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 00:52:18 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 00:52:18 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 00:52:27 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 00:52:27 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 00:52:27 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 00:52:35 Europe/London] Router Error: Undefined variable $auth
+[29-Jul-2025 00:52:35 Europe/London] Application Error: Undefined variable $auth
+[29-Jul-2025 00:52:35 Europe/London] Uncaught exception: Undefined variable $auth
+[29-Jul-2025 00:52:51 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 00:52:51 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 00:52:51 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 00:53:58 Europe/London] Router Error: Undefined variable $auth
+[29-Jul-2025 00:53:58 Europe/London] Application Error: Undefined variable $auth
+[29-Jul-2025 00:53:58 Europe/London] Uncaught exception: Undefined variable $auth
+[29-Jul-2025 00:54:55 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 00:54:55 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 00:54:55 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 00:55:16 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 00:55:16 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 00:55:16 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 00:55:23 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 00:55:23 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 00:55:23 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 00:55:29 Europe/London] Router Error: Undefined variable $auth
+[29-Jul-2025 00:55:29 Europe/London] Application Error: Undefined variable $auth
+[29-Jul-2025 00:55:29 Europe/London] Uncaught exception: Undefined variable $auth
+[29-Jul-2025 00:57:58 Europe/London] Router Error: Undefined variable $auth
+[29-Jul-2025 00:57:58 Europe/London] Application Error: Undefined variable $auth
+[29-Jul-2025 00:57:58 Europe/London] Uncaught exception: Undefined variable $auth
+[29-Jul-2025 00:58:34 Europe/London] Uncaught exception: syntax error, unexpected token ";"
+[29-Jul-2025 00:58:50 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 00:58:50 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 00:58:50 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 00:59:15 Europe/London] Router Error: Undefined variable $auth
+[29-Jul-2025 00:59:15 Europe/London] Application Error: Undefined variable $auth
+[29-Jul-2025 00:59:15 Europe/London] Uncaught exception: Undefined variable $auth
+[29-Jul-2025 01:00:08 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getViewPath()
+[29-Jul-2025 01:01:21 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getViewPath()
+[29-Jul-2025 01:01:23 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getViewPath()
+[29-Jul-2025 01:01:26 Europe/London] Uncaught exception: Call to undefined method App\Core\View::getViewPath()
+[29-Jul-2025 01:02:38 Europe/London] View include error: Undefined variable $auth
+[29-Jul-2025 01:02:45 Europe/London] View include error: Undefined variable $auth
+[29-Jul-2025 01:06:40 Europe/London] View include error: Undefined variable $auth
+[29-Jul-2025 01:06:53 Europe/London] View include error: Undefined variable $auth
+[29-Jul-2025 01:07:26 Europe/London] View include error: Undefined variable $auth
+[29-Jul-2025 01:10:39 Europe/London] View include error: Undefined variable $stats
+[29-Jul-2025 01:10:43 Europe/London] View include error: Undefined variable $stats
+[29-Jul-2025 01:21:34 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 01:21:34 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 01:21:34 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 01:22:00 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 01:22:00 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 01:22:00 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 01:22:02 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 01:22:02 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 01:22:02 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 01:23:19 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 01:23:19 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 01:23:19 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 01:23:47 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 01:23:47 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 01:23:47 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 01:23:51 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 01:23:51 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 01:23:51 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 01:26:56 Europe/London] Uncaught exception: Call to protected method App\Core\View::render() from scope App\Core\Controller
+[29-Jul-2025 01:27:14 Europe/London] Uncaught exception: Call to protected method App\Core\View::render() from scope App\Core\Controller
+[29-Jul-2025 01:27:35 Europe/London] Router Error: Undefined property: App\Core\View::$auth
+[29-Jul-2025 01:27:35 Europe/London] Application Error: Undefined property: App\Core\View::$auth
+[29-Jul-2025 01:27:35 Europe/London] Uncaught exception: Undefined property: App\Core\View::$auth
+[29-Jul-2025 01:27:43 Europe/London] Router Error: Undefined property: App\Core\View::$auth
+[29-Jul-2025 01:27:43 Europe/London] Application Error: Undefined property: App\Core\View::$auth
+[29-Jul-2025 01:27:43 Europe/London] Uncaught exception: Undefined property: App\Core\View::$auth
+[29-Jul-2025 01:28:01 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 01:28:01 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 01:28:01 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 01:28:05 Europe/London] Router Error: Undefined variable $csrfToken
+[29-Jul-2025 01:28:05 Europe/London] Application Error: Undefined variable $csrfToken
+[29-Jul-2025 01:28:05 Europe/London] Uncaught exception: Undefined variable $csrfToken
+[29-Jul-2025 01:38:07 Europe/London] Router Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:38:07 Europe/London] Application Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:38:07 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:40:09 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:40:09 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:40:14 Europe/London] Router Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:40:14 Europe/London] Application Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:40:14 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:40:16 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:40:16 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:40:17 Europe/London] Router Error: Controller 'App\Controllers\Admin\SettingController' not found
+[29-Jul-2025 01:40:17 Europe/London] Application Error: Controller 'App\Controllers\Admin\SettingController' not found
+[29-Jul-2025 01:40:17 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\SettingController' not found
+[29-Jul-2025 01:40:20 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:40:20 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:41:54 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:41:54 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:43:55 Europe/London] Router Error: Controller 'App\Controllers\Admin\MessageController' not found
+[29-Jul-2025 01:43:55 Europe/London] Application Error: Controller 'App\Controllers\Admin\MessageController' not found
+[29-Jul-2025 01:43:55 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\MessageController' not found
+[29-Jul-2025 01:43:58 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:43:58 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:43:59 Europe/London] Router Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:43:59 Europe/London] Application Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:43:59 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:44:00 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:44:00 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:44:02 Europe/London] Router Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:44:02 Europe/London] Application Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:44:02 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:44:06 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:44:06 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:44:07 Europe/London] Router Error: Controller 'App\Controllers\Admin\SubscriptionController' not found
+[29-Jul-2025 01:44:07 Europe/London] Application Error: Controller 'App\Controllers\Admin\SubscriptionController' not found
+[29-Jul-2025 01:44:07 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\SubscriptionController' not found
+[29-Jul-2025 01:44:09 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:44:09 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:44:11 Europe/London] Router Error: Controller 'App\Controllers\Admin\ClassController' not found
+[29-Jul-2025 01:44:11 Europe/London] Application Error: Controller 'App\Controllers\Admin\ClassController' not found
+[29-Jul-2025 01:44:11 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\ClassController' not found
+[29-Jul-2025 01:44:13 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:44:13 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:45:17 Europe/London] Router Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:45:17 Europe/London] Application Error: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:45:17 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\MemberController' not found
+[29-Jul-2025 01:48:07 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:48:07 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:48:17 Europe/London] Router Error: View file not found: /home/perruftn/sites/club/app/Views/admin/members/create.php
+[29-Jul-2025 01:48:17 Europe/London] Application Error: View file not found: /home/perruftn/sites/club/app/Views/admin/members/create.php
+[29-Jul-2025 01:48:17 Europe/London] Uncaught exception: View file not found: /home/perruftn/sites/club/app/Views/admin/members/create.php
+[29-Jul-2025 01:49:59 Europe/London] Uncaught exception: Call to undefined method App\Core\Session::getFlashInput()
+[29-Jul-2025 01:50:09 Europe/London] Uncaught exception: Call to undefined method App\Core\Session::getFlashInput()
+[29-Jul-2025 01:50:13 Europe/London] Uncaught exception: Call to undefined method App\Core\Session::getFlashInput()
+[29-Jul-2025 01:54:04 Europe/London] Uncaught exception: Call to undefined method App\Core\Session::getFlashInput()
+[29-Jul-2025 01:54:54 Europe/London] Uncaught exception: Call to undefined method App\Core\Session::getFlashInput()
+[29-Jul-2025 01:59:12 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 01:59:12 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:00:44 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:00:44 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:00:47 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:00:47 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:01:57 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:01:57 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:07:58 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:07:58 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:08:07 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:08:07 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:10:05 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:10:05 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:12:27 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:12:27 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:12:55 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:12:55 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:13:06 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:13:06 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:13:16 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:13:16 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:18:12 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:18:12 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:20:19 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:20:19 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:21:59 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:21:59 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:22:57 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 02:22:57 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:06 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:06 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:21 Europe/London] Router Error: Controller 'App\Controllers\Admin\MessageController' not found
+[29-Jul-2025 23:03:21 Europe/London] Application Error: Controller 'App\Controllers\Admin\MessageController' not found
+[29-Jul-2025 23:03:21 Europe/London] Uncaught exception: Controller 'App\Controllers\Admin\MessageController' not found
+[29-Jul-2025 23:03:23 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:23 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:24 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:24 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:29 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:29 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:34 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:34 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:38 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:03:38 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:05:15 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:05:15 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:05:15 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:10:58 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:10:58 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:24:17 Europe/London] first_name: required|max:50
+[29-Jul-2025 23:24:17 Europe/London] last_name: required|max:50
+[29-Jul-2025 23:24:17 Europe/London] email: required|email|unique:members,email
+[29-Jul-2025 23:24:17 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:24:17 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:24:17 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:27:58 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:27:58 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:27:58 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:30:08 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:30:08 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:30:08 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:30:33 Europe/London] apply rule
+[29-Jul-2025 23:30:33 Europe/London] apply rule
+[29-Jul-2025 23:30:33 Europe/London] apply rule
+[29-Jul-2025 23:30:33 Europe/London] apply rule
+[29-Jul-2025 23:30:33 Europe/London] apply rule
+[29-Jul-2025 23:30:33 Europe/London] apply rule
+[29-Jul-2025 23:30:33 Europe/London] apply rule
+[29-Jul-2025 23:30:33 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:30:33 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:30:33 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:30:56 Europe/London] apply rule first_name
+[29-Jul-2025 23:30:56 Europe/London] apply rule first_name
+[29-Jul-2025 23:30:56 Europe/London] apply rule last_name
+[29-Jul-2025 23:30:56 Europe/London] apply rule last_name
+[29-Jul-2025 23:30:56 Europe/London] apply rule email
+[29-Jul-2025 23:30:56 Europe/London] apply rule email
+[29-Jul-2025 23:30:56 Europe/London] apply rule email
+[29-Jul-2025 23:30:56 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:30:56 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:30:56 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:31:23 Europe/London] apply rule first_name required
+[29-Jul-2025 23:31:23 Europe/London] apply rule first_name max:50
+[29-Jul-2025 23:31:23 Europe/London] apply rule last_name required
+[29-Jul-2025 23:31:23 Europe/London] apply rule last_name max:50
+[29-Jul-2025 23:31:23 Europe/London] apply rule email required
+[29-Jul-2025 23:31:23 Europe/London] apply rule email email
+[29-Jul-2025 23:31:23 Europe/London] apply rule email unique:members,email
+[29-Jul-2025 23:31:23 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:31:23 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:31:23 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:32:03 Europe/London] call isunique  first_name Kaylan
+[29-Jul-2025 23:32:03 Europe/London] call isunique 50 first_name Kaylan
+[29-Jul-2025 23:32:03 Europe/London] call isunique  last_name Shah
+[29-Jul-2025 23:32:03 Europe/London] call isunique 50 last_name Shah
+[29-Jul-2025 23:32:03 Europe/London] call isunique  email w3systems@gmail.com
+[29-Jul-2025 23:32:03 Europe/London] call isunique  email w3systems@gmail.com
+[29-Jul-2025 23:32:03 Europe/London] call isunique members,email email w3systems@gmail.com
+[29-Jul-2025 23:32:03 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:32:03 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:32:03 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:32:31 Europe/London] apply rule first_name required
+[29-Jul-2025 23:32:31 Europe/London] apply rule first_name max:50
+[29-Jul-2025 23:32:31 Europe/London] apply rule last_name required
+[29-Jul-2025 23:32:31 Europe/London] apply rule last_name max:50
+[29-Jul-2025 23:32:31 Europe/London] apply rule email required
+[29-Jul-2025 23:32:31 Europe/London] apply rule email email
+[29-Jul-2025 23:32:31 Europe/London] apply rule email unique:members,email
+[29-Jul-2025 23:32:31 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:32:31 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:32:31 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:33:06 Europe/London] apply rule required 
+[29-Jul-2025 23:33:06 Europe/London] apply rule max 50
+[29-Jul-2025 23:33:06 Europe/London] apply rule required 
+[29-Jul-2025 23:33:06 Europe/London] apply rule max 50
+[29-Jul-2025 23:33:06 Europe/London] apply rule required 
+[29-Jul-2025 23:33:06 Europe/London] apply rule email 
+[29-Jul-2025 23:33:06 Europe/London] apply rule unique members,email
+[29-Jul-2025 23:33:06 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:33:06 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:33:06 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:34:06 Europe/London] unique case unique members,email
+[29-Jul-2025 23:34:06 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:34:06 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:34:06 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:34:52 Europe/London] unique case members,email email w3systems@gmail.com
+[29-Jul-2025 23:34:52 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:34:52 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:34:52 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:36:30 Europe/London] isunique members,email email w3systems@gmail.com
+[29-Jul-2025 23:36:30 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:36:30 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:36:30 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:37:14 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:37:14 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:37:38 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:37:38 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:37:41 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:37:41 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:37:45 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:37:45 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:43:39 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:43:39 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:43:41 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:43:41 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:43:43 Europe/London] Router Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:43:43 Europe/London] Application Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:43:43 Europe/London] Uncaught exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'perruftn_club.email' doesn't exist
+[29-Jul-2025 23:44:09 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:44:09 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:44:13 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:44:13 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:44:32 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:44:32 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:44:56 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:44:56 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:44:58 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:44:58 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:48:14 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:48:14 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[29-Jul-2025 23:48:16 Europe/London] Uncaught exception: Call to undefined method stdClass::getFullName()
+[29-Jul-2025 23:49:54 Europe/London] Uncaught exception: Call to undefined method stdClass::getFullName()
+[29-Jul-2025 23:50:11 Europe/London] Uncaught exception: Call to undefined method stdClass::getFullName()
+[29-Jul-2025 23:50:16 Europe/London] Uncaught exception: Call to undefined method stdClass::getFullName()
+[29-Jul-2025 23:56:34 Europe/London] Uncaught exception: Call to undefined method stdClass::getFullName()
+[29-Jul-2025 23:56:37 Europe/London] Uncaught exception: Call to undefined method stdClass::getFullName()
+[29-Jul-2025 23:56:39 Europe/London] Uncaught exception: Call to undefined method stdClass::getFullName()
+[29-Jul-2025 23:56:47 Europe/London] Uncaught exception: Call to undefined method stdClass::getFullName()
+[29-Jul-2025 23:56:50 Europe/London] Uncaught exception: Call to undefined method stdClass::getFullName()
+[29-Jul-2025 23:57:13 Europe/London] Uncaught exception: Call to undefined method stdClass::getStatusBadge()
+[30-Jul-2025 00:00:22 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:00:22 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:00:31 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:00:31 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:00:34 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:00:34 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:00:37 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:00:37 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:01:16 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:01:16 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:03:24 Europe/London] Uncaught exception: Call to undefined method stdClass::getInitials()
+[30-Jul-2025 00:03:44 Europe/London] Uncaught exception: Call to undefined method stdClass::getInitials()
+[30-Jul-2025 00:04:10 Europe/London] Uncaught exception: Call to undefined method stdClass::getInitials()
+[30-Jul-2025 00:11:12 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:11:12 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:11:25 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:11:25 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:11:29 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:11:29 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:12:21 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:12:21 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:12:27 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:12:27 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:12:31 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:12:31 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:13:37 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:13:37 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:13:46 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:13:46 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:27:03 Europe/London] Router Error: Undefined variable $id
+[30-Jul-2025 00:27:03 Europe/London] Application Error: Undefined variable $id
+[30-Jul-2025 00:27:03 Europe/London] Uncaught exception: Undefined variable $id
+[30-Jul-2025 00:29:04 Europe/London] Router Error: Undefined variable $id
+[30-Jul-2025 00:29:04 Europe/London] Application Error: Undefined variable $id
+[30-Jul-2025 00:29:04 Europe/London] Uncaught exception: Undefined variable $id
+[30-Jul-2025 00:29:36 Europe/London] Router Error: Undefined variable $id
+[30-Jul-2025 00:29:36 Europe/London] Application Error: Undefined variable $id
+[30-Jul-2025 00:29:36 Europe/London] Uncaught exception: Undefined variable $id
+[30-Jul-2025 00:31:41 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:31:41 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:31:45 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:31:45 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:08 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:08 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:11 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:11 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:19 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:19 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:21 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:21 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:24 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:24 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:28 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:34:28 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:37:18 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:37:18 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:37:20 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:37:20 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:40:29 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:40:29 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:40:32 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:40:32 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:42:33 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:42:33 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:48:44 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:48:44 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:48:59 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:48:59 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:53:57 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:53:57 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:54:06 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:54:06 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:54:29 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:54:29 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:54:50 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:54:50 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:57:42 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:57:42 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:59:18 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:59:18 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:59:20 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 00:59:20 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:01:52 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:01:52 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:01:55 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:01:55 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:04:48 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:04:48 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:04:53 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:04:53 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:04:55 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:04:55 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:05:29 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:05:29 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:14:54 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:14:54 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:18:58 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:18:58 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:25:58 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:25:58 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:26:16 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:26:16 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:28:44 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:28:44 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:29:06 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:29:06 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:34:57 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:34:57 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:34:59 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:34:59 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:35:07 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:35:07 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:43:21 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:43:21 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:45:05 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:45:05 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:45:48 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:45:48 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:46:35 Europe/London] Uncaught exception: Unmatched '}'
+[30-Jul-2025 01:46:52 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:46:52 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:50:11 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:50:11 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:50:58 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:50:58 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:51:02 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:51:02 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:51:09 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:51:09 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:51:12 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:51:12 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:52:38 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:52:38 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:53:09 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:53:09 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:53:15 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:53:15 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:55:15 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:55:15 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:55:32 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:55:32 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:56:57 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:56:57 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 01:57:02 Europe/London] Router Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 01:57:02 Europe/London] Application Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 01:57:02 Europe/London] Uncaught exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 01:57:59 Europe/London] Router Error: Undefined array key "min"
+[30-Jul-2025 01:57:59 Europe/London] Application Error: Undefined array key "min"
+[30-Jul-2025 01:57:59 Europe/London] Uncaught exception: Undefined array key "min"
+[30-Jul-2025 02:02:39 Europe/London] Router Error: Undefined array key "min"
+[30-Jul-2025 02:02:39 Europe/London] Application Error: Undefined array key "min"
+[30-Jul-2025 02:02:39 Europe/London] Uncaught exception: Undefined array key "min"
+[30-Jul-2025 02:05:15 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:05:15 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:05:21 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:05:21 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:05:23 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:05:23 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:05:48 Europe/London] Router Error: Undefined array key "min"
+[30-Jul-2025 02:05:48 Europe/London] Application Error: Undefined array key "min"
+[30-Jul-2025 02:05:48 Europe/London] Uncaught exception: Undefined array key "min"
+[30-Jul-2025 02:13:48 Europe/London] Uncaught exception: syntax error, unexpected token "??", expecting "->" or "?->" or "{" or "["
+[30-Jul-2025 02:17:23 Europe/London] Router Error: Undefined array key "format"
+[30-Jul-2025 02:17:23 Europe/London] Application Error: Undefined array key "format"
+[30-Jul-2025 02:17:23 Europe/London] Uncaught exception: Undefined array key "format"
+[30-Jul-2025 02:18:42 Europe/London] Router Error: Undefined array key "date_format"
+[30-Jul-2025 02:18:42 Europe/London] Application Error: Undefined array key "date_format"
+[30-Jul-2025 02:18:42 Europe/London] Uncaught exception: Undefined array key "date_format"
+[30-Jul-2025 02:20:16 Europe/London] Uncaught exception: htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+[30-Jul-2025 02:21:30 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:21:30 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:21:46 Europe/London] Uncaught exception: htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+[30-Jul-2025 02:22:18 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:22:18 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:22:32 Europe/London] Uncaught exception: App\Core\View::e(): Argument #1 ($value) must be of type string, array given, called in /home/perruftn/sites/club/app/Views/components/alerts.php on line 27
+[30-Jul-2025 02:22:32 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:22:32 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:23:08 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:23:08 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:23:13 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:23:13 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:23:21 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:23:21 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:23:25 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:23:25 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:11 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:11 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:14 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:14 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:32 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:32 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:49 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:49 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:53 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:24:53 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:25:08 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:25:08 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:27:50 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:27:50 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:27:53 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:27:53 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:27:57 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:27:57 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:28:18 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:28:18 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:28:20 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:28:20 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:28:37 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:28:37 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:30:23 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:30:23 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:30:27 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:30:27 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:32:08 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:32:08 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:32:12 Europe/London] Router Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:32:12 Europe/London] Application Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:32:12 Europe/London] Uncaught exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:35:51 Europe/London] Router Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:35:51 Europe/London] Application Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:35:51 Europe/London] Uncaught exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:37:02 Europe/London] Router Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:37:02 Europe/London] Application Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:37:02 Europe/London] Uncaught exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:37:41 Europe/London] Router Error: Undefined property: App\Core\Validator::$db
+[30-Jul-2025 02:37:41 Europe/London] Application Error: Undefined property: App\Core\Validator::$db
+[30-Jul-2025 02:37:41 Europe/London] Uncaught exception: Undefined property: App\Core\Validator::$db
+[30-Jul-2025 02:38:43 Europe/London] Router Error: Undefined property: App\Core\Validator::$db
+[30-Jul-2025 02:38:43 Europe/London] Application Error: Undefined property: App\Core\Validator::$db
+[30-Jul-2025 02:38:43 Europe/London] Uncaught exception: Undefined property: App\Core\Validator::$db
+[30-Jul-2025 02:39:17 Europe/London] Router Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:39:17 Europe/London] Application Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:39:17 Europe/London] Uncaught exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:39:57 Europe/London] Router Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:39:57 Europe/London] Application Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:39:57 Europe/London] Uncaught exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:41:12 Europe/London] Router Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:41:12 Europe/London] Application Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:41:12 Europe/London] Uncaught exception: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1 WHERE email = ?' at line 1
+[30-Jul-2025 02:41:34 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:41:34 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:41:54 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:41:54 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:45:27 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:45:27 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:45:35 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:45:35 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:45:43 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:45:43 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:45:56 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:45:56 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:46:27 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:46:27 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:46:39 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:46:39 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:46:42 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:46:42 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:46:57 Europe/London] Application Error: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php
+[30-Jul-2025 02:46:57 Europe/London] Uncaught exception: Layout file not found: /home/perruftn/sites/club/app/Views/layouts/guest.php

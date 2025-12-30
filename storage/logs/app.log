@@ -1,0 +1,63 @@
+[2025-07-29 23:37:13] error: Member create error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'phone' in 'field list'
+[2025-07-29 23:37:45] error: Member create error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'phone' in 'field list'
+[2025-07-29 23:44:09] error: Member create error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'emergency_contact_phone' in 'field list'
+[2025-07-29 23:44:32] error: Member create error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'emergency_contact_phone' in 'field list'
+[2025-07-29 23:44:58] error: Member create error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'
+[2025-07-30 00:40:29] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.duration_days' in 'field list'
+[2025-07-30 00:40:32] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.duration_days' in 'field list'
+[2025-07-30 00:42:33] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.duration_days' in 'field list'
+[2025-07-30 00:42:38] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.duration_days' in 'field list'
+[2025-07-30 00:48:44] error: Member show error: View file not found: /home/perruftn/sites/club/app/Views/admin/members/show.php
+[2025-07-30 00:48:59] error: Member show error: View file not found: /home/perruftn/sites/club/app/Views/admin/members/show.php
+[2025-07-30 00:54:50] error: Member edit error: View file not found: /home/perruftn/sites/club/app/Views/admin/members/edit.php
+[2025-07-30 01:04:55] error: Member show error: Undefined property: stdClass::$parent_first_name
+[2025-07-30 01:14:54] error: Member show error: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated
+[2025-07-30 01:18:58] error: Member show error: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated
+[2025-07-30 02:23:13] error: Member edit error: Undefined variable $error0
+[2025-07-30 02:41:33] error: Member edit error: Undefined variable $error0
+[2025-07-31 00:38:48] error: Role create form error: View file not found: /home/perruftn/sites/club/app/Views/admin/roles/form.php
+[2025-07-31 16:57:32] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 16:57:54] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 16:59:10] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 17:00:08] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 17:02:33] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 17:04:48] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 17:18:24] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 17:18:47] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 17:21:44] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 17:25:11] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 17:26:30] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-07-31 17:26:42] error: Role management page error: foreach() argument must be of type array|object, string given
+[2025-08-01 00:01:21] error: Error loading settings page: View file not found: /home/perruftn/sites/club/app/Views/admin/settings/index.php
+[2025-08-01 00:02:19] error: Error loading settings page: View file not found: /home/perruftn/sites/club/app/Views/admin/settings/index.php
+[2025-08-01 00:03:54] error: Error loading settings page: View file not found: /home/perruftn/sites/club/app/Views/admin/settings/index.php
+[2025-08-01 00:15:50] error: Error loading settings page: Undefined variable $envSettings
+[2025-08-01 00:15:54] error: Error loading settings page: Undefined variable $envSettings
+[2025-08-01 00:16:17] error: Error loading settings page: Undefined variable $envSettings
+[2025-08-04 03:55:19] error: Dashboard stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-08-04 03:55:19] error: Upcoming classes error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-08-04 04:25:18] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.instance_date_time' in 'field list'
+[2025-08-04 04:25:21] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.instance_date_time' in 'field list'
+[2025-08-04 04:25:25] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.instance_date_time' in 'field list'
+[2025-08-04 04:25:29] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.instance_date_time' in 'field list'
+[2025-08-04 04:25:35] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.instance_date_time' in 'field list'
+[2025-08-04 04:26:18] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.instance_date_time' in 'field list'
+[2025-08-05 16:42:25] error: Dashboard stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-08-05 16:42:25] error: Upcoming classes error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-08-05 17:48:26] error: Dashboard stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-08-05 17:48:26] error: Upcoming classes error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-08-05 18:09:32] error: Subscription update error: Undefined variable $start_date
+[2025-08-05 18:29:12] error: Subscription update error: Undefined variable $currentDay
+[2025-08-05 18:30:07] error: Subscription update error: Undefined variable $currentDay
+[2025-08-05 18:31:05] error: Subscription update error: Undefined variable $currentDay
+[2025-08-05 18:51:43] error: Dashboard stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-08-05 18:51:43] error: Upcoming classes error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-09-11 10:23:48] error: Dashboard stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-09-11 10:23:48] error: Upcoming classes error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-10-24 16:03:32] error: Dashboard stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-10-24 16:03:32] error: Upcoming classes error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-10-24 16:04:38] error: Dashboard stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-10-24 16:04:38] error: Upcoming classes error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-10-24 16:07:48] error: Member show error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.instance_date_time' in 'field list'
+[2025-12-02 19:21:10] error: Dashboard stats error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
+[2025-12-02 19:21:10] error: Upcoming classes error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'instance_date_time' in 'where clause'
